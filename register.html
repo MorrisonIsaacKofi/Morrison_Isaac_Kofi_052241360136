@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form action="#" method="POST">
+            
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="class">Class</label>
+                <select id="class" name="class" required>
+                    <option value="">Select your level</option>
+                    <option value="1">Level 100</option>
+                    <option value="2">Level 200</option>
+                    <option value="3">Level 300</option>
+                    <option value="4">Level 400</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Have_you_paid_your_fees">Have_you_paid_your_fees</label>
+                <select name="Have_you_paid_your_fees" id="Have_you_paid_your_fees" required>
+                    <option value="">select yes/no</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                </select> 
+            </div>
+
+            <div class="form-group">
+                <label for="payment">Mode you did your Payment</label>
+                <select name="payment" id="payment" required>
+                    <option value="">Paid through</option>
+                    <option value="1">Mobile Money</option>
+                    <option value="2">Bank Account</option>
+                </select>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="course_offered">course_offered</label>
+                <input type="course_offered" id="course_offered" name="course_offered" placeholder="please_enter_program_offered" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentId">Student ID Number</label>
+                <input type="text" id="studentId" name="studentId" placeholder="Enter your card number" maxlength="16"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="Date of registration">registration_date</label>
+                <input type="text" id="registration_date" name="registration_date" placeholder="Please enter todays date(dd/MM/YY)" maxlength="12"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone_number">phone_number</label>
+                <input type="text" id="phone_number" name="phone_number" placeholder="Enter your phone_number" maxlength="15" required>
+            </div>
+            <center>
+            <button type="submit" class="button"><a href="thank.html">Register</a></button>
+            </center>
+            </a>
+
+            
+        </form>
+
+    </div><br><br>
+
+    
+
+</body>
+</html>
